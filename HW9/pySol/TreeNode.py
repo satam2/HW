@@ -3,3 +3,5 @@
          self.val = val
          self.left = left
          self.right = right
+
+     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
