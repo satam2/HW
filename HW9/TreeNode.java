@@ -1,12 +1,14 @@
 public class TreeNode {
-
     int val;
     TreeNode left;
     TreeNode right;
+    
     TreeNode() {
-
     }
-    TreeNode(int val) { this.val = val; }
+    
+    TreeNode(int val) {
+    	this.val = val;
+    }
 
     TreeNode(int val, TreeNode left, TreeNode right) {
         this.val = val;
@@ -19,7 +21,7 @@ public class TreeNode {
         if (p.val > root.val && q.val > root.val) {
             return lowestCommonAncestor(root.right, p, q);
         }
-     // if p and q < root.val, their LCA is left child of root
+        // if p and q < root.val, their LCA is left child of root
         else if (p.val < root.val && q.val < root.val) {
             return lowestCommonAncestor(root.left, p, q);
         }
@@ -27,15 +29,14 @@ public class TreeNode {
         else {
             return root;
         }
-
    }
     
     public static void main(String[] args) {
     	// make the BST
-    	TreeNode n1 = new TreeNode(1,null,null);
+    	TreeNode n1 = new TreeNode(1);
     	TreeNode n3 = new TreeNode(3,n1,null);
-    	TreeNode n5 = new TreeNode(5,null,null);
-    	TreeNode n9 = new TreeNode(9,null,null);
+    	TreeNode n5 = new TreeNode(5);
+    	TreeNode n9 = new TreeNode(9);
     	TreeNode n8 = new TreeNode(8,n5,n9);
     	TreeNode n4 = new TreeNode(4,n3,n8); // root node
     	
@@ -46,7 +47,6 @@ public class TreeNode {
     	
     	System.out.println("the lca of 3 and 1 is: " + lca1.val); // expected: 3
     	System.out.println("the lca of 1 and 5 is: " + lca2.val); // expected: 4
-    	System.out.println("the lca of 5 and 9 is: " + lca3.val); 
+    	System.out.println("the lca of 5 and 9 is: " + lca3.val); // expected: 8
     }
-
  }
