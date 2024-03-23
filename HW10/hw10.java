@@ -31,7 +31,6 @@ public class hw10 extends TreeNode {
         hw10 test = new hw10();
         List<List<Integer>> r = test.levelOrder(n4); // expected: 4 3 8 1 5 9
         for (List<Integer> lvlList : r)
-            for (Integer i : lvlList)
-                System.out.print(i + " ");
+            System.out.print(lvlList + " ");
     }
 }
