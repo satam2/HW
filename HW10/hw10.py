@@ -34,5 +34,5 @@ test = hw10()
 r = test.levelOrder(n4) # expected: 4 3 8 1 5 9
 
 for list in r:
-    for number in list:
-        print(number, end=" ")
+    print(list, end=" ")
+
