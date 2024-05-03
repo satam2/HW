@@ -40,9 +40,9 @@ public class hw6 {
     }
 
     public static void main(String[] args){
-        hw6 test = new hw6();
-        int[] nums = {0,1,1};
-        List<List<Integer>> result = test.threeSum(nums);
-        System.out.println(result);
+        // hw6 test = new hw6();
+        // int[] nums = {0,1,1};
+        // List<List<Integer>> result = test.threeSum(nums);
+        // System.out.println(result);
     }
 }
