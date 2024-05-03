@@ -1,1 +1,1 @@
-
+I decided to sort the array first in order to check for duplicates easier. I used one loop to keep track of one number and two pointers to keep track of the other two numbers and check to see if they sum up to 0 (as long as they are not the same number). After adding a valid triplet to the result list, we move the pointers to avoid duplicates values.
