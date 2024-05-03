@@ -1,1 +1,1 @@
-
+We can approach this problem using a simple binary search. We can do this because we know the list is sorted, or else it cannot be done. This will have the time complexity of O(log n) and space complexity of O(1).
